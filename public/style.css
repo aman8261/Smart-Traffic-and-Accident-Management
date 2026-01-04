@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #1a73e8;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #5f6368;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.video-container {
+    width: 100%;
+    height: 180px;
+    background-color: #000;
+    margin: 15px 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.status,
+.density-indicators {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.emergency-vehicle h2 {
+    color: #4285f4;
+}
+
+.accident-detection h2 {
+    color: #ea4335;
+}
+
+.traffic-density h2 {
+    color: #34a853;
+}
+
+#emergency-status,
+#accident-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#emergency-status {
+    background-color: #4285f4;
+}
+
+#accident-status {
+    background-color: #ea4335;
+}
+
+.density-indicators span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 4px;
+    background-color: #f1f3f4;
+    color: #5f6368;
+}
+
+.density-indicators .active {
+    background-color: #34a853;
+    color: #fff;
+}
+
+footer {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

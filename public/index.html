@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Intelligent Traffic Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI-Based Intelligent Traffic Management System</h1>
+        <p>Real-Time Emergency Detection & Smart Traffic Control</p>
+    </header>
+    <main>
+        <section class="card emergency-vehicle">
+            <h2>Emergency Vehicle Detection</h2>
+            <div class="video-container">
+                <video src="https://storage.googleapis.com/project-idx-assets/traffic-management-demo/ambulance.mp4" autoplay muted loop></video>
+            </div>
+            <p>Detects ambulances in real time using a custom-trained YOLO model</p>
+            <div class="status">
+                <span id="emergency-status">No Emergency Vehicle</span>
+            </div>
+        </section>
+        <section class="card accident-detection">
+            <h2>Accident Detection</h2>
+            <div class="video-container">
+                <video src="https://storage.googleapis.com/project-idx-assets/traffic-management-demo/accident.mp4" autoplay muted loop></video>
+            </div>
+            <p>Automatically detects road accidents and triggers emergency response</p>
+            <div class="status">
+                <span id="accident-status">No Accident</span>
+            </div>
+        </section>
+        <section class="card traffic-density">
+            <h2>Traffic Density Estimation</h2>
+            <div class="video-container">
+                <video src="https://storage.googleapis.com/project-idx-assets/traffic-management-demo/traffic-flow.mp4" autoplay muted loop></video>
+            </div>
+            <p>Estimates lane-wise traffic density using vehicle detection</p>
+            <div class="density-indicators">
+                <span>Low</span>
+                <span>Medium</span>
+                <span class="active">High</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Hackathon Demo | AI-Powered Smart Traffic System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
